@@ -1,28 +1,34 @@
 {
-    "type": "module",
-    "scripts": {
-        "eslint": "eslint",
-        "eslint//": "As an npm script to dedupe potential changes",
-        "format": "prettier --check .",
-        "format:fix": "prettier --write .",
-        "lint": "npm run sort-package-json && npm run format && npm run eslint",
-        "lint:fix": "npm run sort-package-json:fix && npm run format:fix && npm run eslint",
-        "sort-package-json": "sort-package-json --check",
-        "sort-package-json:fix": "sort-package-json",
-        "start": "http-server site -o",
-        "validate:fix": "npm run format:fix && npm run lint:fix && npm run sort-package-json:fix && cd pages/politics/trump-litigation && npm run validate:fix"
-    },
-    "prettier": {
-        "printWidth": 100,
-        "tabWidth": 4
-    },
-    "devDependencies": {
-        "@eslint/js": "^9.37.0",
-        "@types/node": "^22.15.32",
-        "eslint": "^9.37.0",
-        "globals": "^16.4.0",
-        "http-server": "^14.1.1",
-        "prettier": "^3.5.3",
-        "sort-package-json": "^2.12.0"
-    }
+  "name": "project-dice",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "3.7.4",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  }
 }

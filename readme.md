@@ -21,11 +21,11 @@ Hosting tools:
 Developer tools:
 
 - fnm to manage versions of Node
-    1. `winget install Schniz.fnm --source winget`
-    2. (restart shell)
-    3. `fnm use 24`
-    4. `npm i`
-    5. `npm start`
+  1. `winget install Schniz.fnm --source winget`
+  2. (restart shell)
+  3. `fnm use 24`
+  4. `npm i`
+  5. `npm run dev`
 - Node.js to run QoL scripts
 - @types/node to silence false positive errors on references to Node globals
 - Git LFS to better track changes to images

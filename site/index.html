@@ -5,32 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Project Dice</title>
         <link rel="shortcut icon" href="public/favicon.ico" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="index.js" defer type="module"></script>
     </head>
     <body>
-        <div class="article">
-            <h1>Project Dice</h1>
-            <p>
-                I need to (<label><input type="radio" name="roll-or-avoid" required /> roll</label>
-                <label><input type="radio" name="roll-or-avoid" required /> avoid rolling</label>)
-                (<label><input type="radio" name="above-or-below" /> above</label>
-                <label><input type="radio" name="above-or-below" /> below</label>) a (<span
-                    id="target-number"
-                ></span
-                >) on a
-                <label><input type="radio" name="die-type" required /> d1-20</label>
-            </p>
-            <footer>
-                <hr />
-                <a
-                    href="https://github.com/mark-wiemer/project-dice"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    View website source
-                </a>
-            </footer>
-        </div>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>
