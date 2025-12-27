@@ -13,8 +13,8 @@ body {
     font-size: 18px;
     line-height: 1.5em;
     @media (prefers-color-scheme: dark) {
-        background-color: black;
-        color: gainsboro;
+        background-color: rgb(12 0 12);
+        color: #e2dff5;
     }
 }
 
@@ -85,12 +85,12 @@ a {
             outline: 2px solid rgb(219, 8, 219);
         }
         &:visited:active {
-            outline: 2px solid gainsboro;
-            color: gainsboro;
+            outline: 2px solid #e2dff5;
+            color: #e2dff5;
         }
         &:active {
-            outline: 2px solid gainsboro;
-            color: gainsboro;
+            outline: 2px solid #e2dff5;
+            color: #e2dff5;
         }
     }
 }
