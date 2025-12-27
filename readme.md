@@ -109,6 +109,10 @@ Go into what this site is and history
 - Dicestats
 - ProbJob
 - ChanceStats
+- DiceDump
+- dicedeets.com
+- dicedudes.com
+-
 
 ## Developer notes
 
