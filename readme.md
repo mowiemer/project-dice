@@ -20,9 +20,13 @@ Hosting tools:
 
 Developer tools:
 
+- fnm to manage versions of Node
+    - winget install Schniz.fnm
+    - restart shell
+    - `fnm`
+- Node.js to run QoL scripts
 - @types/node to silence false positive errors on references to Node globals
 - Git LFS to better track changes to images
 - GitHub Actions to automatically deploy the site
 - http-server for testing the site
-- Node.js to run QoL scripts
 - Prettier to format the repo
