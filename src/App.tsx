@@ -1,6 +1,6 @@
 function App() {
   return (
-    <>
+    <div className="article">
       <h1>Project Dice!</h1>
       <p>Hello world!</p>
       <footer>
@@ -13,7 +13,7 @@ function App() {
           View website source
         </a>
       </footer>
-    </>
+    </div>
   );
 }
 
