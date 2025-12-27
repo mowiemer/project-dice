@@ -2,6 +2,12 @@
 
 A top secret project!
 
+## Vision
+
+### How lucky was that?
+
+What are the odds you get a certain roll of the dice? Can you guess the odds in advance?
+
 ## Developer notes
 
 General notes:
