@@ -1,6 +1,9 @@
-dist
 node_modules
 .vscode/settings.json
+
+# Vite build artifacts
+site/assets
+site/index.html
 
 # Logs
 logs
