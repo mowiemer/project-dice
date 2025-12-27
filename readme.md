@@ -1,17 +1,16 @@
-# [markwiemer.com](https://markwiemer.com)
+# [Project Dice](https://mark-wiemer.github.io/project-dice/)
 
-My personal site hosting my articles, pictures of my dog, and other stuff I like 😊
+A top secret project!
 
 ## Developer notes
 
 General notes:
 
-- Some pages are tracked directly in the `site` folder, others are in the `pages` folder
+- Pages are tracked directly in the `site` folder
 
 Hosting tools:
 
 - GitHub Pages
-- namecheap.com
 
 Developer tools:
 
