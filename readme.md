@@ -40,10 +40,9 @@ How to monetize
 
 - Primary: eventually partner wih games and link to their website
 - Supplemental js tools for popular games? modern helper tools that would work on an app?
-  -- connect different games together, one app for all the supplemental tools
-  -- would have history, reviews, guides, etc, links to others
-  --
-  Partner with games and such for money stuff
+  - connect different games together, one app for all the supplemental tools
+  - would have history, reviews, guides, etc, links to others
+  - Partner with games and such for money stuff
 
 ### Different Pages
 
