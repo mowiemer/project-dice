@@ -1,12 +1,17 @@
+import MarkdownPage from "./components/MarkdownPage";
+import devlog from "./content/devlog.md?raw";
+
 function App() {
   return (
     <div className="article">
-      <h1>Project Dice!</h1>
-      <p>Hello world!</p>
+      <h1>Project Dice</h1>
+
+      <MarkdownPage content={devlog} />
+
       <footer>
         <hr />
         <a
-          href="https://github.com/mark-wiemer/project-dice"
+          href="https://github.com/mowiemer/project-dice"
           target="_blank"
           rel="noreferrer"
         >

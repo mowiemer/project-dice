@@ -136,3 +136,16 @@ img.headerImage {
     max-width: 100%;
   }
 }
+
+.markdown h1 {
+  margin-top: 2rem;
+}
+
+.markdown p {
+  line-height: 1.6;
+}
+
+.markdown code {
+  background: #222;
+  padding: 0.2em 0.4em;
+}
