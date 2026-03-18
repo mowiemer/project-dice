@@ -15,8 +15,7 @@ The purpose of this devlog is:
 - Maybe inspire any developer who sees this to pull the trigger on starting their own website
 
 At the time of writing (25.12.2025), I have minimal proficiency in web development. I have a minor in computer sciences, have participated in a couple hackathons, and know the basics of html, css, and js. I have exposure to d3 and a linkedIn certificate or two of the "essential web dev" trainings, but have never fleshed out any sort of website.
-
-I have several personal development goals for this project:
+<div style="color:red">I have several personal development goals for this project:</div>
 
 - To learn about css and javascript ui elements using React and associated populater packages/frameworks.
 - To learn about data visualizations
@@ -110,3 +109,23 @@ Website should be very minimal, snappy, responsive. The main value is how fast y
 #### Ideas
 
 I had epiphany last night about a totally different game idea. I wonder if it will change things. Table top roleplaying, intersection with video game. modular tiles that fit together. See Word file for more details
+
+### 15.03.2026
+
+Back again, 3 months later. My first goal will be to refamiliarize with this whole process. then I want to 
+- Clean up this dev log-- practice making it linkable/collapsible/tabset panel so it's far easier to navigate. Maybe with some snazzy dropdown open animations
+  - Get consistent file structure for learning these things and making edits easy. One page per file?
+  - Look into how good devlogs are structured
+- Look into how TODO lists are organized for projects
+- Look into best naming practices
+- Learn github and cloning and stuff to practice keeping track of that stuff
+- Do javascript fundamentals course
+
+I don't want to lean too much on AI for this learning process. Probably will stick with Youtube and LinkedIn Learning for crash courses and stuff, to learn the fundamentals. the whole point of this is to be for practice, anyway.
+
+Some more things to look into
+- FCP
+  - First Contenful Paint
+- Next.js
+  - JS framework built on top of React UX components, to handle backend things all through javascript
+
