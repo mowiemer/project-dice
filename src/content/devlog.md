@@ -1,3 +1,4 @@
+
 # Devlog
 
 Welcome to the devlog for nicedice.net!
@@ -129,3 +130,49 @@ Some more things to look into
 - Next.js
   - JS framework built on top of React UX components, to handle backend things all through javascript
 
+
+### 2026.03.17
+
+Just realized I've been putting the date in the wrong order. Flipped
+
+Things to look into
+
+**Component libraries**
+- Bulma
+- Tailwind CSS
+
+[How I made my website](https://www.youtube.com/watch?v=_tWh4cYCTv0)
+
+**Cool Tools**
+- [Gradient Generator](https://www.joshwcomeau.com/gradient-generator/)
+- [Chroma JS](https://bundlephobia.com/package/chroma-js@3.2.0)
+
+
+### 2026.03.18
+
+I bought two domain names: **mitchwiemer.com** and **mitchwiemer.fun**. Both for 2 years!
+
+I pointed them to the main underlying github repo, mowiemer.github.io. Learned about DNS stuff
+
+I also made a dropdown
+
+I think the first thing this website should be is simply a collection of micro projects. I also would love to keep a running log of things I learned and, when applicable, where I learned them. Sort of like a web dev glossary
+
+#### Future Ideas
+
+HTML Maze Game
+- Make a maze-like game based out of purely html and css. keep your cursor in the box and navigate to the next one.
+- On hover the box will spit out the next one in the path. you have to keep it going while also not messing up
+- Maybe make it an answerable question in the box too, and you have to move to the right hover
+- annoying but you want to win
+
+
+### 2026.03.19
+
+I made a very crude logo! I used InkScape to do it. Since it is an svg, I can modify and customize it in the browser with code. Maybe I have a whole page just for experimenting with the properties of animating the logo, that would be fun.
+
+TODO with the logo
+- Clean up/tighten edges
+- Ensure efficient save (get rid of inkscape metadata. Save as -> Plain SVG)
+
+But for now I should probably learn fundamentals of html.
