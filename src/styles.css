@@ -197,3 +197,14 @@ img.headerImage {
   margin-left: auto;
   margin-right: auto;
 }
+
+.logo {
+  transition: transform 0.25s ease;
+  display: block;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}

@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="article">
       
-      <img src= {logo} alt="Alt text" width="200" height="200" className="center"></img>
+      <img src= {logo} alt="Alt text" width="200" height="200" className="center logo"></img>
       <h1>Project Dice</h1>
       <MarkdownPage content={devlog} />
 
