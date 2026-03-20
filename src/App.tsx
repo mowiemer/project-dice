@@ -10,6 +10,16 @@ function App() {
 
       <MarkdownPage content={devlog} />
 
+      {/* test dropdown */}
+      <div className="dropdown">
+        <button>This is a test button dropdown</button>
+        <div className="content">
+          <a href="">Apple</a>
+          <a href="">Orange</a>
+          <a href="">Banana</a>
+        </div>
+      </div>
+
       <footer>
         <hr />
         <a
