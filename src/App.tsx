@@ -1,13 +1,12 @@
 import MarkdownPage from "./components/MarkdownPage";
 import devlog from "./content/devlog.md?raw";
-
+import logo from "./assets/logo.svg";
 function App() {
   return (
     <div className="article">
       
-      <img src="logo.svg" alt="Alt text" width="200" height="200" className="center"></img>
+      <img src= {logo} alt="Alt text" width="200" height="200" className="center"></img>
       <h1>Project Dice</h1>
-
       <MarkdownPage content={devlog} />
 
       {/* test dropdown */}
