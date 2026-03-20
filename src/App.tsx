@@ -4,6 +4,8 @@ import devlog from "./content/devlog.md?raw";
 function App() {
   return (
     <div className="article">
+      
+      <img src="logo.svg" alt="Alt text" width="200" height="200" className="center"></img>
       <h1>Project Dice</h1>
 
       <MarkdownPage content={devlog} />

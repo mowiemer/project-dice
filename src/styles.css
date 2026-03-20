@@ -149,3 +149,8 @@ img.headerImage {
   background: #222;
   padding: 0.2em 0.4em;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
