@@ -7,7 +7,7 @@ type Props = {
 export default function MarkdownPage({ content }: Props) {
   return (
     <article
-      className="markdown"
+      className="article markdown"
       dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
     />
   );
