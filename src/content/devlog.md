@@ -174,5 +174,22 @@ I made a very crude logo! I used InkScape to do it. Since it is an svg, I can mo
 TODO with the logo
 - Clean up/tighten edges
 - Ensure efficient save (get rid of inkscape metadata. Save as -> Plain SVG)
+- Pull it in as an svg, not img, so I can play around with the pathing/custom editing
+- Put logo in top left or right of page, absolute positioning. Have it always link back to the main homepage when clicked
 
 But for now I should probably learn fundamentals of html.
+
+### 2026.03.24
+
+I watched lots of the [HTML & CSS fundamentals course](https://www.youtube.com/watch?v=HGTJBPNC-Gw)-- a great resource. I'd say it helped, but I still have to finagle with things.
+
+Rearranged React components. Figured out how to re-route between components, trying to keep a clean structure.
+
+Updated the background color to dark mode. At some point will implement toggle between light and dark.
+
+Next on the list is to get a navbar going to freely navigate between pages. At some point I will look at React Tutorial.
+
+Immediate next step is to have a way to have each Devlog post be independent. Or rather, maybe build collapsible components and then have a DevLog.tsx where I can expand each one when clicked on. And then un-expand when clicked again.
+
+Now that I have my HTML structure set up I should flesh out a test page of what I want my actual homepage to look like.
+
