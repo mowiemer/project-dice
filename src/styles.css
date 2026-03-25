@@ -13,7 +13,7 @@ body {
   font-size: 18px;
   line-height: 1.5em;
   @media (prefers-color-scheme: dark) {
-    background-color: rgb(34, 0, 34);
+    background-color: hsl(232, 65%, 7%);
     color: #e2dff5;
   }
 }
@@ -54,15 +54,15 @@ a {
   border-radius: 5px;
 
   /* See docs/tests.md for link state test matrix */
-  color: rgb(9 115 131);
+  color: hsl(235, 68%, 85%);
   &:hover {
     outline: 2px solid rgb(9 115 131);
   }
   &:visited {
-    color: rgb(107, 2, 107);
+    color: hsl(245, 8%, 67%);
   }
   &:visited:hover {
-    outline: 2px solid rgb(107, 2, 107);
+    outline: 2px solid hsl(245, 8%, 67%);
   }
   &:visited:active {
     outline: 2px solid black;
@@ -207,4 +207,9 @@ img.headerImage {
   transform: scale(1.08);
   cursor: pointer;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+* {
+  background-color: hsl(232, 65%, 7%);
+  color: hsl(260, 13%, 95%)
 }
