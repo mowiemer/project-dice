@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div className="article">
+    <div className="center">
 
       <img src={logo} alt="Alt text" width="200" height="200" className="center logo"></img>
       <h1>Project Dice</h1>
