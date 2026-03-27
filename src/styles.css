@@ -193,6 +193,26 @@ img.headerImage {
 
 }
 
+/* Just a test */
+.gradient {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(281deg 100% 21%) 8%,
+    hsl(304deg 100% 23%) 17%,
+    hsl(319deg 100% 30%) 25%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(336deg 100% 41%) 42%,
+    hsl(346deg 83% 51%) 50%,
+    hsl(3deg 95% 61%) 58%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(30deg 100% 55%) 75%,
+    hsl(40deg 100% 50%) 83%,
+    hsl(48deg 100% 50%) 92%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -210,7 +230,126 @@ img.headerImage {
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
 }
 
-* {
+body {
   background-color: hsl(232, 65%, 7%);
   color: hsl(260, 13%, 95%)
+}
+
+.expandable {
+  background-color: hsl(0, 28%, 40%);
+
+}
+
+
+
+
+/* Center the collapsible component on the page */
+.wrapper {
+  display: flex;                 /* Use flexbox layout */
+  justify-content: center;       /* Center children horizontally */
+  padding-top: 20px;             /* Push the content down from the top of the page */
+}
+
+
+/* Main container for the collapsible component */
+.collapsible {
+  max-width: 50%;              /* Prevent it from getting wider than 450px */
+  width: 100%;                   /* Allow it to shrink on smaller screens */
+  font-weight: 500;              /* Slightly heavier than normal text */
+}
+
+
+/* Hide the checkbox input that powers the toggle */
+.collapsible input {
+  display: none;                 /* Completely removes the checkbox from layout */
+}
+
+
+/* The clickable header users interact with */
+.collapsible label {
+  display: block;                /* Makes the label fill the container width */
+  position: relative;            /* Allows positioning of pseudo-elements inside it */
+  background: hsl(232, 55%, 56%);           /* White card-like background */
+  color: hsl(260, 13%, 95%);              /* Dark blue text */
+  font-weight: 600;              /* Slightly bold header */
+  padding: 15px;                 /* Space inside the label */
+  margin-bottom: 10px;           /* Space below the label */
+  border-radius: 4px;            /* Slightly rounded corners */
+  cursor: pointer;               /* Show hand cursor on hover */
+  
+  box-shadow: 0 4px 10px hsl(0,0%,85%); /* Soft drop shadow */
+}
+
+
+/* Small arrow icon that appears on the right side */
+.collapsible label::after {
+  content: "›";                  /* Arrow character */
+  position: absolute;            /* Position relative to the label */
+  right: 15px;                   /* Distance from the right edge */
+  top: 50%;                      /* Center vertically */
+  transform: translateY(-50%);   /* Perfect vertical centering */
+  font-size: 22px;               /* Size of arrow */
+  transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
+
+/* Rotate arrow when checkbox is checked */
+.collapsible input:checked + label::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+/* Hidden content section */
+.collapsible-text {
+  display: none;
+  /* max-height: 0;                 Start collapsed */
+  overflow: hidden;              /* Hide overflowing content */
+  opacity: 0;                    /* Slight fade effect while hidden */
+  background: hsl(232, 55%, 56%);           /* White card background */
+  border-radius: 4px;            /* Match label styling */
+  line-height: 1.5;              /* Comfortable paragraph spacing */
+
+  transition: 
+    max-height 0.3s ease,
+    opacity 0.3s ease;           /* Animate expansion and fade */
+}
+
+
+/* Expand the text when checkbox is checked */
+.collapsible input:checked ~ .collapsible-text {
+  display: block;
+  /* max-height: 300px;             Expand container */
+  opacity: 1;                    /* Fully visible */
+  padding-bottom: 20px;          /* Add breathing room at bottom */
+}
+
+
+/* Heading inside expanded content */
+.collapsible-text h2 {
+  padding: 15px 15px 0;          /* Padding top and sides */
+  margin-bottom: 10px;           /* Space below heading */
+  color: hsl(260, 13%, 95%);                /* Same dark blue as label */
+}
+
+
+/* Paragraph text inside collapsible */
+.collapsible-text p {
+  padding: 0 15px;               /* Side padding for readability */
+}
+
+/* .page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+} */
+
+.page {
+  /* max-width: 700px; */
+  /* margin: 0 auto;
+  padding: 40px 20px; */
+}
+
+.page h1 {
+  text-align: center;
 }
