@@ -225,9 +225,13 @@ img.headerImage {
 }
 
 .logo:hover {
-  transform: scale(1.08);
+  transform: rotateZ(180deg) scale(1.08);
   cursor: pointer;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+.logo:active {
+  transform: rotateY(180deg);
 }
 
 body {
@@ -352,4 +356,28 @@ body {
 
 .page h1 {
   text-align: center;
+}
+
+.homepageButton {
+  height: 200px;
+  width: 400px;
+  margin: 5px;
+  background-color: hsl(232, 55%, 56%); 
+  color: white;
+  border-radius: 10px;
+  border: solid white 2px;
+  font-weight: 600;
+  font-size: 3em;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.homepageButton:hover {
+  
+  transform: scale(1.05);
+  background-color: hsl(232, 61%, 63%);  
+}
+
+.wip {
+  cursor: not-allowed;
 }

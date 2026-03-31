@@ -4,27 +4,38 @@ import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div className="center">
+    <div className="page center">
 
       <img src={logo} alt="Alt text" width="200" height="200" className="center logo"></img>
       <h1>Project Dice</h1>
 
       <p>This page is still WIP. Please go to devlog to see the latest content</p>
+      <span>
+        <Link to="/devlog">
+          <button className="homepageButton">View Devlog</button>
+        </Link>
+        <button className="homepageButton wip">WIP 1</button>
 
-      <span><Link to="/devlog">
-        <button>View Devlog</button>
-      </Link></span>
+      </span>
+      <br />
+      <span>
+        <button className="homepageButton wip">WIP 2</button>
+        <button className="homepageButton wip">WIP 3</button>
 
-      <div className="dropdown">
+      </span>
+
+
+
+      {/* <div className="dropdown">
         <button>This is a test button dropdown</button>
         <div className="content">
           <a href="">Apple</a>
           <a href="">Orange</a>
           <a href="">Banana</a>
         </div>
-      </div>
+      </div> */}
 
-      <footer>
+      {/* <footer>
         <hr />
         <a
           href="https://github.com/mowiemer/project-dice"
@@ -33,7 +44,7 @@ export default function Home() {
         >
           View website source
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
