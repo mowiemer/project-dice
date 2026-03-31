@@ -55,9 +55,6 @@ a {
 
   /* See docs/tests.md for link state test matrix */
   color: hsl(235, 68%, 85%);
-  &:hover {
-    outline: 2px solid rgb(9 115 131);
-  }
   &:visited {
     color: hsl(245, 8%, 67%);
   }
@@ -144,6 +141,7 @@ img.headerImage {
 
 .markdown p {
   line-height: 1.6;
+  text-align: left;
 }
 
 .markdown code {
@@ -239,25 +237,20 @@ body {
   color: hsl(260, 13%, 95%)
 }
 
-.expandable {
-  background-color: hsl(0, 28%, 40%);
-
-}
-
-
-
 
 /* Center the collapsible component on the page */
 .wrapper {
-  display: flex;                 /* Use flexbox layout */
-  justify-content: center;       /* Center children horizontally */
+  display: flex;
+  max-width: 100%;
+  width: 1000px;
+  margin: auto;
   padding-top: 20px;             /* Push the content down from the top of the page */
 }
 
 
 /* Main container for the collapsible component */
 .collapsible {
-  max-width: 50%;              /* Prevent it from getting wider than 450px */
+  display: block;
   width: 100%;                   /* Allow it to shrink on smaller screens */
   font-weight: 500;              /* Slightly heavier than normal text */
 }
@@ -271,17 +264,23 @@ body {
 
 /* The clickable header users interact with */
 .collapsible label {
-  display: block;                /* Makes the label fill the container width */
-  position: relative;            /* Allows positioning of pseudo-elements inside it */
+  display: flex;                /* Makes the label fill the container width */
+  position: relative;            /*Allows positioning of pseudo-elements inside it*/
   background: hsl(232, 55%, 56%);           /* White card-like background */
   color: hsl(260, 13%, 95%);              /* Dark blue text */
   font-weight: 600;              /* Slightly bold header */
   padding: 15px;                 /* Space inside the label */
-  margin-bottom: 10px;           /* Space below the label */
+  margin-bottom: 10px;           /*Space below the label*/
   border-radius: 4px;            /* Slightly rounded corners */
   cursor: pointer;               /* Show hand cursor on hover */
-  
   box-shadow: 0 4px 10px hsl(0,0%,85%); /* Soft drop shadow */
+  transition: 0.50s ease;
+  
+}
+
+.collapsible label:hover {
+  transform: scale(1.05);
+  background-color: hsl(232, 61%, 63%);  
 }
 
 
@@ -305,27 +304,30 @@ body {
 
 /* Hidden content section */
 .collapsible-text {
-  display: none;
-  /* max-height: 0;                 Start collapsed */
+  max-height: 0;                 /*Start collapsed */
   overflow: hidden;              /* Hide overflowing content */
   opacity: 0;                    /* Slight fade effect while hidden */
   background: hsl(232, 55%, 56%);           /* White card background */
   border-radius: 4px;            /* Match label styling */
   line-height: 1.5;              /* Comfortable paragraph spacing */
 
-  transition: 
-    max-height 0.3s ease,
-    opacity 0.3s ease;           /* Animate expansion and fade */
+  /* Animate expansion and fade */
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    padding 0.3s ease;
 }
 
 
 /* Expand the text when checkbox is checked */
 .collapsible input:checked ~ .collapsible-text {
-  display: block;
-  /* max-height: 300px;             Expand container */
+  max-height: 3000px;             /*Expand container */
   opacity: 1;                    /* Fully visible */
   padding-bottom: 20px;          /* Add breathing room at bottom */
+  opacity: 1; 
 }
+
 
 
 /* Heading inside expanded content */
@@ -341,20 +343,7 @@ body {
   padding: 0 15px;               /* Side padding for readability */
 }
 
-/* .page {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-} */
-
-.page {
-  /* max-width: 700px; */
-  /* margin: 0 auto;
-  padding: 40px 20px; */
-}
-
-.page h1 {
+.page h1, p {
   text-align: center;
 }
 

@@ -12,20 +12,20 @@ const devlogs = import.meta.glob("../content/devlogs/*.md", {
 
 export default function Devlog() {
     return (
-        <div className = "page"> 
+        <div className="page">
 
             <span><Link to="/">
                 <button>Return to Home</button>
             </Link></span>
 
             <h1>DevLog</h1>
-
-            {Object.entries(devlogs).map(([path, content]) => {
+            <p>See the updates to the website below.</p>
+            {Object.entries(devlogs).reverse().map(([path, content]) => {
                 const filename = path.split("/").pop()!;
                 const name = filename.replace(".md", "").replaceAll("-", ".");
                 return (
                     <div className="wrapper">
-                        <Collapsible key={path} label={name}>
+                        <Collapsible label={name}>
                             <MarkdownPage content={content as string} />
                         </Collapsible>
                     </div>
