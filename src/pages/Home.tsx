@@ -1,12 +1,15 @@
 
 import logo from "../assets/logo.svg"
 import { Link } from "react-router-dom"
+import BackgroundMusic from "../components/BackgroundMusic";
+// import song from "../music/song.mp3";
 
 export default function Home() {
   return (
     <div className="page center">
 
       <img src={logo} alt="Alt text" width="200" height="200" className="center logo"></img>
+      <BackgroundMusic />
       <h1>Project Dice</h1>
 
       <span><p>This page is still WIP. Please go to devlog to see the latest content.</p><p className="small">Also hello Bryanna</p></span>
