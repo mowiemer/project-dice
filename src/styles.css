@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.small {
+  font-size: .25em;
+}
+
 body {
   /* Add 1em below to allow user to sanity-check it's the true end-of-page */
   /* Use margin instead of padding as most user agents have a margin we don't want */

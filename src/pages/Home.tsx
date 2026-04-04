@@ -9,7 +9,7 @@ export default function Home() {
       <img src={logo} alt="Alt text" width="200" height="200" className="center logo"></img>
       <h1>Project Dice</h1>
 
-      <p>This page is still WIP. Please go to devlog to see the latest content</p>
+      <span><p>This page is still WIP. Please go to devlog to see the latest content.</p><p className="small">Also hello Bryanna</p></span>
       <span>
         <Link to="/devlog">
           <button className="homepageButton">View Devlog</button>
