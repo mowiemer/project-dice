@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.small {
-  font-size: .25em;
-}
-
 body {
   /* Add 1em below to allow user to sanity-check it's the true end-of-page */
   /* Use margin instead of padding as most user agents have a margin we don't want */
@@ -25,6 +21,8 @@ body {
     color: #e2dff5;
   }
 }
+
+
 
 figcaption {
   font-size: smaller;
@@ -355,6 +353,9 @@ body {
   text-align: center;
 }
 
+
+
+
 .homepageButton {
   height: 200px;
   width: 400px;
@@ -374,6 +375,19 @@ body {
   transform: scale(1.05);
   background-color: hsl(232, 61%, 63%);  
 }
+
+.music-button {
+  display: block;
+  color: rgb(253, 253, 253);
+  text-align: center;
+  width:300px;
+  font-size: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  background-color: hsl(232, 55%, 56%);
+  margin: 0 auto;
+}
+
 
 .wip {
   cursor: not-allowed;

@@ -26,8 +26,8 @@ export default function BackgroundMusic() {
 
   return (
     <div>
-      <button onClick={toggleMusic}>
-        {playing ? "Pause Music" : "Play Music"}
+      <button  className="music-button" onClick={toggleMusic}>
+        {playing ? "⏸ Pause Funky Music" : " ▶ Play Funky Music"}
       </button>
 
       <audio ref={audioRef} loop>
