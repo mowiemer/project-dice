@@ -1,8 +1,7 @@
 
-import logo from "../assets/logo.svg"
-import { Link } from "react-router-dom"
+import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 import BackgroundMusic from "../components/BackgroundMusic";
-// import song from "../music/song.mp3";
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       <BackgroundMusic />
       <h1>Project Dice</h1>
 
-      <span><p>This page is still WIP. Please go to devlog to see the latest content.</p><p className="small">Also hello Bryanna</p></span>
+      <span><p>This page is still WIP. Please go to devlog to see the latest content.</p></span>
       <span>
         <Link to="/devlog">
           <button className="homepageButton">View Devlog</button>
